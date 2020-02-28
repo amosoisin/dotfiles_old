@@ -55,3 +55,4 @@ alias activate="source venv/bin/activate"
 export FLASK_APP=run.py
 
 export PATH=$PATH:~/.local/bin/
+fcitx-autostart > /dev/null 2>&1
