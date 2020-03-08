@@ -13,8 +13,11 @@ sudo npm install -g tern
 sudo npm install -g neovim
 
 echo "start install dotfiles"
-sudo chmod +x ./setup_dotfiles.sh
-sh ./setup.sh
+TERN_PATH=/usr/local/lib/node_modules/tern
+sudo rm $TERN_PATH/.tern-project
+sudo ln -s $HOME/dotfiles/tern-project $TERN_PATH/.tern-project
+rm $HOME/.bashrc
+ln -s $HOME/dotfiles/bashrc $HOME/.bashrc
 source ~/.bashrc
 
 echo "start neovim settings"
