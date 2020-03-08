@@ -10,6 +10,7 @@ sudo apt -y install python3 python3-venv python3-pip clang libclang-dev terminat
 
 echo "start npm install tern"
 sudo npm install -g tern
+sudo npm install -g neovim
 
 echo "start install dotfiles"
 sudo chmod +x ./setup_dotfiles.sh
